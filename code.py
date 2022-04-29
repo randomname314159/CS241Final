@@ -48,14 +48,13 @@ def make_plot():
 	
 	plt.rcParams['figure.figsize'] = [10, 10]
 	plt.rcParams['figure.dpi'] = 100
-	plt.pyplot.tick_params(axis='both', which='major', labelsize=10, labelbottom = False, bottom=False, top = False, left = False, labeltop=True)
-	plt.style.use("dark_background")
-	
-	print(df)
+	plt.pyplot.tick_params(axis='both', which='major', labelsize=10, bottom=False, top = False, left = False)
 
-	p = seaborn.boxplot(x="Stage",y="Speed",data=df,palette=seaborn.color_palette("flare"))
-	#(df, cmap=seaborn.color_palette("mako", as_cmap=True))
-	p.get_figure().savefig("pkmn3.png",bbox_inches='tight',transparent=True)
+	
+	seaborn.set_style("white")
+	p = seaborn.boxplot(x="Stage",y="HP",data=df,palette=seaborn.color_palette("flare"))
+	p.get_figure().savefig("pkmn2.png",bbox_inches='tight')
 
 
 make_plot()
+
