@@ -1,1 +1,78 @@
-hello there
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<meta property="og:image" content="heat_final.png" />
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Data for Data</title>
+	
+	<style type="text/css" media="screen">
+	
+		body {
+			line-height: 140%;
+			margin: auto;
+			width: 800px;
+		}
+		code {font-size: 120%;}
+		
+		
+		pre code {
+			background-color: #00bfb2;
+			color: #000000;
+			
+			display: block;
+			padding: 20px;
+		}
+		
+		.centered {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+}
+		
+	</style>
+	
+</head>
+
+<body bgcolor="000000" text="00bfb2">
+
+<style>
+ body {
+        counter-reset: h1counter;
+    }
+    h1 {
+        counter-reset: h2counter;
+    }
+    h2 {
+        counter-reset: h3counter;
+    }
+    h2:before {
+        content: counter(h2counter) ".\0000a0\0000a0";
+        counter-increment: h2counter;
+    }
+    h3:before {
+        content: counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0";
+        counter-increment: h3counter;
+    }
+</style>
+	
+<h1 id="preamble">CS 241 Final: Data Vizualization</h1>
+
+<p>For this final, I have created three visualizations of pokemon stats as evolutions occur.with data sourced from Bulbapedia. An interesting note is that instead of stats increasing over time, they instead converge on an average. This is likely due to legendaries(who typically have higher base stats) are stage 1, likely skewing the stats of the Stage 1 pokemon.</p>
+  
+<center>
+<img src="pkmn2.png" height=640px>
+</center>
+  
+<center>
+<img src="pkmn1.png" height=640px>
+</center>
+  
+<center>
+<img src="pkmn3.png" height=640px>
+</center>
+ 
